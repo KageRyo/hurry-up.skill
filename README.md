@@ -20,6 +20,16 @@ Copy this repository's root `SKILL.md` into the destination supported by your co
 | [Cursor](https://docs.cursor.com/context/rules-for-ai) | Copy the instructions into `.cursor/rules/hurry-up.mdc` or the root `AGENTS.md`. Cursor applies those rule files; it does not discover this repository's root `SKILL.md` as a skill. |
 | DeepSeek | DeepSeek is a model provider rather than a shared skill loader. In a coding client, add the instructions to its supported repository rules; with the API, include them in the system prompt. The [Chat Completions API](https://api-docs.deepseek.com/api/create-chat-completion/) supports system messages. |
 
+### Ask your agent to install it
+
+From the project where you want to use the skill, paste this prompt into your coding agent:
+
+```text
+Install the hurry-up skill from https://github.com/KageRyo/hurry-up.skill for the project I'm currently working in.
+
+Read the repository's README.md and SKILL.md, identify this agent's supported project-level skill or instruction format, and install it using the documented method. Use a native skill location when available; otherwise adapt the instructions to the agent's repository rules format. Do not install it globally or overwrite existing instructions. Make only the files needed for this installation, then verify them and report their paths and how to invoke the skill. If this agent cannot install it directly, explain the exact manual steps and do not claim it is installed.
+```
+
 For example, from your project root, replace the source path with the location of this clone:
 
 ```sh
