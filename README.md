@@ -39,5 +39,4 @@ alwaysApply: true
 Other agents can use the same instructions through their native skill directory, repository instruction file, custom rules, or system/developer prompt. These are usage paths for the plain Markdown instructions, not claims of an official integration or automatic discovery in every product. See each agent's documentation for its current loading rules.
 
 ## License
-
-MIT. See [LICENSE](LICENSE).
+Released under the [LICENSE](LICENSE). Copyright © 2026 Chien-Hsun Chang.
